@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="City of Kyle">
+  <!-- Square app/favicon mark derived from the City of Kyle identity: a Texas
+       silhouette with a star marking Kyle, in the City brand palette
+       (navy #173a64, crimson #c01f41). -->
+  <rect width="512" height="512" rx="112" fill="#173a64"/>
+  <g transform="translate(80 80) scale(3.52)" fill="#ffffff">
+    <path d="M34 4 L52 4 L52 26 L70 26 L75 40 L73 52 L70 60 L72 66 L69 71 L60 75 L50 80 L41 92 L36 82 L28 78 L22 70 L19 73 L16 64 L8 56 L3 47 L16 34 L34 34 Z"/>
+  </g>
+  <circle cx="238" cy="274" r="15" fill="#c01f41"/>
+</svg>
