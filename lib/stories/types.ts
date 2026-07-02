@@ -29,11 +29,15 @@ export type ComparisonRow = {
 
 export type SourceRef = { name: string; href: string }
 
+// A strategic-plan focus area: a titled vision statement, optionally with goals.
+export type Pillar = { title: string; body: string; goals?: string[] }
+
 // A single renderable block within a section. Discriminated by `kind` so
 // StorySection can switch on it. Add new block kinds here as charts land.
 export type Block =
   | { kind: 'prose'; html: string }
   | { kind: 'kpis'; items: Kpi[] }
+  | { kind: 'pillars'; items: Pillar[] }
   | { kind: 'donut'; title: string; source?: SourceRef; spec: DonutSpec }
   | { kind: 'bars'; title: string; source?: SourceRef; spec: ChartSpec }
   | {

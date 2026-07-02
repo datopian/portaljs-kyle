@@ -4,6 +4,7 @@
 
 import type { Story, StoryMeta } from './types'
 import { loadBudgetBook } from './budget-book'
+import { loadStrategicPlan } from './strategic-plan'
 
 type StoryEntry = {
   meta: Pick<StoryMeta, 'slug' | 'title' | 'subtitle'>
@@ -19,6 +20,14 @@ export const STORIES: Record<string, StoryEntry> = {
         "The City's adopted fiscal-year 2026 budget as an interactive digital story.",
     },
     load: loadBudgetBook,
+  },
+  'strategic-plan': {
+    meta: {
+      slug: 'strategic-plan',
+      title: 'Strategic Plan',
+      subtitle: "The City's long-term organizational direction, goals, and progress.",
+    },
+    load: loadStrategicPlan,
   },
 }
 

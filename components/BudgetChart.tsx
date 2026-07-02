@@ -10,6 +10,9 @@ export type ChartSpec = {
   series: Series[] // one or more bars per group
   unitSuffix?: string // appended to value labels, e.g. "M"
   unitPrefix?: string // prepended to value labels, e.g. "$"
+  // 'dark' (default) renders white text/gridlines for the navy hero panel; 'light'
+  // renders dark text for use on white story cards.
+  theme?: 'dark' | 'light'
 }
 
 const W = 560
@@ -27,7 +30,15 @@ function niceMax(v: number): number {
   return 10 * pow
 }
 
-export default function BudgetChart({ categories, series, unitSuffix = '', unitPrefix = '' }: ChartSpec) {
+export default function BudgetChart({
+  categories,
+  series,
+  unitSuffix = '',
+  unitPrefix = '',
+  theme = 'dark',
+}: ChartSpec) {
+  // Text/gridline colors switch with theme; bar fills come from series props.
+  const ink = theme === 'dark' ? '#ffffff' : '#334155' // slate-700
   const plotW = W - PAD.left - PAD.right
   const plotH = H - PAD.top - PAD.bottom
   const max = niceMax(Math.max(1, ...series.flatMap((s) => s.values)))
@@ -58,15 +69,15 @@ export default function BudgetChart({ categories, series, unitSuffix = '', unitP
               x2={W - PAD.right}
               y1={y(t)}
               y2={y(t)}
-              stroke="#ffffff"
-              strokeOpacity={i === 0 ? 0.35 : 0.12}
+              stroke={ink}
+              strokeOpacity={i === 0 ? (theme === 'dark' ? 0.35 : 0.5) : 0.12}
             />
             <text
               x={PAD.left - 10}
               y={y(t) + 4}
               textAnchor="end"
-              fill="#ffffff"
-              fillOpacity="0.55"
+              fill={ink}
+              fillOpacity="0.65"
               fontSize="11"
             >
               {fmt(Math.round(t * 10) / 10)}
@@ -93,7 +104,7 @@ export default function BudgetChart({ categories, series, unitSuffix = '', unitP
                       x={bx + barW / 2}
                       y={by - 5}
                       textAnchor="middle"
-                      fill="#ffffff"
+                      fill={ink}
                       fontSize="11"
                       fontWeight="600"
                     >
@@ -106,7 +117,7 @@ export default function BudgetChart({ categories, series, unitSuffix = '', unitP
                 x={gx + (groupW - innerPad * 2) / 2}
                 y={H - PAD.bottom + 20}
                 textAnchor="middle"
-                fill="#ffffff"
+                fill={ink}
                 fillOpacity="0.85"
                 fontSize="13"
                 fontWeight="600"
@@ -122,7 +133,7 @@ export default function BudgetChart({ categories, series, unitSuffix = '', unitP
           {series.map((s, i) => (
             <g key={s.label} transform={`translate(${PAD.left + i * 150}, ${H - 16})`}>
               <rect width="12" height="12" rx="2" fill={s.color} y="-10" />
-              <text x="18" y="0" fill="#ffffff" fillOpacity="0.9" fontSize="13">
+              <text x="18" y="0" fill={ink} fillOpacity="0.9" fontSize="13">
                 {s.label}
               </text>
             </g>

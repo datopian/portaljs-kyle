@@ -4,6 +4,7 @@ import BudgetChart from '../BudgetChart'
 import Donut from '../charts/Donut'
 import KpiTiles from './KpiTiles'
 import ComparisonTable from './ComparisonTable'
+import Pillars from './Pillars'
 import SectionHeading from '../SectionHeading'
 
 function SourceLink({ source }: { source?: SourceRef }) {
@@ -49,6 +50,8 @@ function renderBlock(block: Block, i: number) {
       )
     case 'kpis':
       return <KpiTiles key={i} items={block.items} />
+    case 'pillars':
+      return <Pillars key={i} items={block.items} />
     case 'donut':
       return (
         <ChartCard key={i} title={block.title} source={block.source}>
