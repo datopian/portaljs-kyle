@@ -38,12 +38,34 @@ export default function Departments({ departments, total }: Props) {
           <nav className="mb-3 text-sm text-gray-500">
             <Link href="/" className="hover:text-brand">Home</Link>
             <span className="mx-2">/</span>
-            <span className="text-gray-700">Departments</span>
+            <span className="text-gray-700">Transparency</span>
           </nav>
-          <h1 className="text-3xl font-bold text-gray-900">Departments</h1>
-          <p className="mt-1 text-sm text-gray-500">
-            {total} datasets published across {departments.length} City departments.
+          <h1 className="text-3xl font-bold text-gray-900">Transparency</h1>
+          <p className="mt-1 max-w-2xl text-sm text-gray-500">
+            Spending, revenue, and open data across every City department —
+            {' '}{total} datasets published by {departments.length} departments.
           </p>
+          {/* Quick links tying the transparency story together */}
+          <div className="mt-4 flex flex-wrap gap-2 text-sm">
+            <Link
+              href="/showcases/budget-book"
+              className="rounded-full border border-gray-200 px-3 py-1 font-medium text-brand hover:border-brand hover:bg-brand/5"
+            >
+              Budget Book →
+            </Link>
+            <Link
+              href="/showcases/strategic-plan"
+              className="rounded-full border border-gray-200 px-3 py-1 font-medium text-brand hover:border-brand hover:bg-brand/5"
+            >
+              Strategic Plan →
+            </Link>
+            <Link
+              href="/search"
+              className="rounded-full border border-gray-200 px-3 py-1 font-medium text-brand hover:border-brand hover:bg-brand/5"
+            >
+              Open Data →
+            </Link>
+          </div>
         </div>
       </div>
 

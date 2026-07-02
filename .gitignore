@@ -9,3 +9,4 @@ public/catalog.jsonld
 
 # TypeScript incremental build cache
 *.tsbuildinfo
+.gstack/
