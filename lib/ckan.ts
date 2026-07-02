@@ -71,6 +71,50 @@ export const ckan = {
   },
 }
 
+// Fetch a resource file by URL and return its raw text. Server-side only (used in
+// getStaticProps by the story data layer). Returns null on any failure so callers
+// can degrade gracefully instead of failing the whole build.
+export async function fetchResourceText(url: string): Promise<string | null> {
+  try {
+    const res = await fetch(url)
+    if (!res.ok) return null
+    return await res.text()
+  } catch {
+    return null
+  }
+}
+
+// Fetch a resource file by URL and return its bytes (for binary formats like XLSX).
+// Server-side only. Returns null on failure.
+export async function fetchResourceBytes(url: string): Promise<ArrayBuffer | null> {
+  try {
+    const res = await fetch(url)
+    if (!res.ok) return null
+    return await res.arrayBuffer()
+  } catch {
+    return null
+  }
+}
+
+// Find the first resource on a dataset matching one of the given formats (case-
+// insensitive), returning its download URL. Used by story loaders to locate the
+// CSV/XLSX behind a curated dataset slug.
+export async function findResourceUrl(
+  slug: string,
+  formats: string[]
+): Promise<string | null> {
+  try {
+    const pkg = await ckan.getDatasetDetails(slug)
+    const want = formats.map((f) => f.toLowerCase())
+    const match = (pkg.resources || []).find((r) =>
+      want.includes((r.format || '').toLowerCase())
+    )
+    return match?.url || null
+  } catch {
+    return null
+  }
+}
+
 // A card is the serializable shape passed to client components from the
 // server-side data functions (never pass the raw CKAN responses around unfiltered).
 export type DatasetCard = {
