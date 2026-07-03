@@ -85,7 +85,7 @@ export default function Search({ datasets, departments, formats }: Props) {
             <span className="text-gray-700">Datasets</span>
           </nav>
           <h1 className="text-3xl font-bold text-gray-900">Datasets</h1>
-          <p className="mt-1 text-sm text-gray-500">
+          <p className="mt-1 text-base text-gray-500 sm:text-sm">
             {datasets.length} datasets published by the City of Kyle, served live from the open data catalog.
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function Search({ datasets, departments, formats }: Props) {
                 value={q}
                 onChange={(e) => setQ(e.target.value)}
                 placeholder="Filter datasets…"
-                className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40"
+                className="w-full rounded-md border border-gray-300 px-3 py-2.5 text-sm shadow-sm max-sm:text-base focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/40 sm:py-2"
               />
             </div>
 
@@ -114,7 +114,7 @@ export default function Search({ datasets, departments, formats }: Props) {
               <div className="space-y-1">
                 <button
                   onClick={() => setDept('')}
-                  className={`flex w-full items-center justify-between rounded px-2 py-1.5 text-left text-sm ${
+                  className={`flex w-full items-center justify-between rounded px-2 py-2 text-left text-sm sm:py-1.5 ${
                     dept === '' ? 'bg-brand/10 font-medium text-brand' : 'text-gray-600 hover:bg-gray-100'
                   }`}
                 >
@@ -125,12 +125,12 @@ export default function Search({ datasets, departments, formats }: Props) {
                   <button
                     key={d.namespace}
                     onClick={() => setDept(d.namespace)}
-                    className={`flex w-full items-center justify-between rounded px-2 py-1.5 text-left text-sm ${
+                    className={`flex w-full items-center justify-between rounded px-2 py-2 text-left text-sm sm:py-1.5 ${
                       dept === d.namespace ? 'bg-brand/10 font-medium text-brand' : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
-                    <span className="truncate">{d.title}</span>
-                    <span className="ml-2 text-xs text-gray-400">{d.count}</span>
+                    <span className="min-w-0 truncate">{d.title}</span>
+                    <span className="ml-2 shrink-0 text-xs text-gray-400">{d.count}</span>
                   </button>
                 ))}
               </div>
@@ -143,7 +143,7 @@ export default function Search({ datasets, departments, formats }: Props) {
                   <button
                     key={f}
                     onClick={() => toggleFormat(f)}
-                    className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+                    className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors sm:px-3 sm:py-1 sm:text-xs ${
                       fmts.includes(f)
                         ? 'border-brand bg-brand text-white'
                         : 'border-gray-300 text-gray-600 hover:border-brand hover:text-brand'

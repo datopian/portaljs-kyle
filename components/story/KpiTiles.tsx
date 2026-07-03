@@ -8,8 +8,8 @@ export default function KpiTiles({ items }: { items: Kpi[] }) {
       {items.map((k) => (
         <div key={k.label} className="rounded-xl border border-gray-200 bg-white p-5">
           <dt className="text-3xl font-bold tracking-tight text-brand">{k.value}</dt>
-          <dd className="mt-1.5 text-sm text-gray-600">{k.label}</dd>
-          {k.hint && <dd className="mt-1 text-xs text-gray-400">{k.hint}</dd>}
+          <dd className="mt-1.5 text-base text-gray-600 sm:text-sm">{k.label}</dd>
+          {k.hint && <dd className="mt-1 text-sm text-gray-400 sm:text-xs">{k.hint}</dd>}
         </div>
       ))}
     </dl>

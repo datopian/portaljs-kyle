@@ -86,9 +86,9 @@ export function ShowcaseCard({ showcase }: { showcase: Showcase }) {
       </span>
       <h3 className="flex items-center gap-1.5 text-base font-semibold text-gray-900 group-hover:text-brand">
         {showcase.title}
-        <ArrowIcon className="h-4 w-4 text-gray-300 group-hover:text-brand" />
+        <ArrowIcon className="h-4 w-4 shrink-0 text-gray-300 group-hover:text-brand" />
       </h3>
-      <p className="mt-1.5 text-sm text-gray-500">{showcase.description}</p>
+      <p className="mt-1.5 text-base text-gray-500 sm:text-sm">{showcase.description}</p>
     </>
   )
 

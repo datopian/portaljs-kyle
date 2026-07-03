@@ -38,7 +38,7 @@ export default function DatasetCard({ dataset }: { dataset: Card }) {
         {dataset.name}
       </h3>
       {dataset.description && (
-        <p className="mt-1.5 line-clamp-2 text-sm text-gray-500">{dataset.description}</p>
+        <p className="mt-1.5 line-clamp-2 text-base text-gray-500 sm:text-sm">{dataset.description}</p>
       )}
 
       <div className="mt-auto flex items-center justify-between border-t border-gray-100 pt-3.5 text-sm">

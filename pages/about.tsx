@@ -74,7 +74,7 @@ export default function About() {
                   <c.icon className="h-6 w-6" />
                 </span>
                 <h3 className="font-semibold text-gray-900">{c.title}</h3>
-                <p className="mt-1.5 text-sm text-gray-500">{c.body}</p>
+                <p className="mt-1.5 text-base text-gray-500 sm:text-sm">{c.body}</p>
               </div>
             ))}
           </div>
@@ -95,7 +95,7 @@ export default function About() {
           <div className="mt-5 flex flex-wrap gap-3">
             <Link
               href="/search"
-              className="rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+              className="rounded-md bg-brand px-5 py-2.5 text-base font-semibold text-white transition-colors hover:bg-brand-dark sm:text-sm"
             >
               Browse datasets
             </Link>
@@ -103,7 +103,7 @@ export default function About() {
               href="https://kyletxprod.ogopendata.com"
               target="_blank"
               rel="noreferrer"
-              className="rounded-md border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-700 transition-colors hover:border-brand hover:text-brand"
+              className="rounded-md border border-gray-300 px-5 py-2.5 text-base font-semibold text-gray-700 transition-colors hover:border-brand hover:text-brand sm:text-sm"
             >
               Open data catalog (CKAN)
             </a>

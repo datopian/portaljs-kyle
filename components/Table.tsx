@@ -132,11 +132,11 @@ export function Table({ data: initialData = [], cols: initialCols = [], csv = ''
       <DebouncedInput
         value={globalFilter}
         onChange={(v) => setGlobalFilter(String(v))}
-        className="mb-4 w-full max-w-sm px-3 py-2 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-brand"
+        className="mb-4 w-full max-w-sm px-3 py-2.5 text-sm border border-gray-300 rounded-md shadow-sm max-sm:text-base focus:outline-none focus:ring-2 focus:ring-brand sm:py-2"
         placeholder="Search all columns..."
       />
-      <div className="overflow-x-auto">
-        <table className="w-full text-sm">
+      <div className="min-w-0 overflow-x-auto whitespace-nowrap">
+        <table className="min-w-full text-sm">
           <thead className="text-left border-b border-gray-300">
             {table.getHeaderGroups().map((hg) => (
               <tr key={hg.id}>
@@ -167,15 +167,22 @@ export function Table({ data: initialData = [], cols: initialCols = [], csv = ''
           </tbody>
         </table>
       </div>
-      <div className="flex items-center justify-center gap-2 mt-6">
+      <div className="flex flex-wrap items-center justify-center gap-2 mt-6">
         {[
           { Icon: ChevronDoubleLeftIcon, action: () => table.setPageIndex(0), disabled: !table.getCanPreviousPage() },
           { Icon: ChevronLeftIcon, action: () => table.previousPage(), disabled: !table.getCanPreviousPage() },
           { Icon: ChevronRightIcon, action: () => table.nextPage(), disabled: !table.getCanNextPage() },
           { Icon: ChevronDoubleRightIcon, action: () => table.setPageIndex(table.getPageCount() - 1), disabled: !table.getCanNextPage() },
         ].map(({ Icon, action, disabled }, i) => (
-          <button key={i} onClick={action} disabled={disabled} className={`w-5 h-5 ${disabled ? 'opacity-25' : 'opacity-100'}`}>
-            <Icon />
+          <button
+            key={i}
+            onClick={action}
+            disabled={disabled}
+            aria-label="Pagination"
+            className={`relative inline-flex h-8 w-8 items-center justify-center rounded-md text-gray-600 hover:bg-gray-100 ${disabled ? 'opacity-25' : 'opacity-100'}`}
+          >
+            <span className="absolute top-1/2 left-1/2 size-[max(100%,3rem)] -translate-x-1/2 -translate-y-1/2 pointer-fine:hidden" aria-hidden="true" />
+            <Icon className="h-4 w-4" />
           </button>
         ))}
         <span className="text-sm text-gray-600 ml-2">

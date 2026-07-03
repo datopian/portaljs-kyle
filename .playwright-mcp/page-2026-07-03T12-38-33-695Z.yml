@@ -1,0 +1,355 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - text: A
+          - link "PortalJS" [ref=e9] [cursor=pointer]:
+            - /url: https://portaljs.com
+          - text: demo · data from the City of Kyle, Texas open data catalog
+        - link "Data catalog" [ref=e11] [cursor=pointer]:
+          - /url: https://kyletxprod.ogopendata.com
+      - navigation [ref=e13]:
+        - link "City of Kyle Open Data — home":
+          - /url: /
+          - img "City of Kyle"
+        - generic [ref=e14]:
+          - link "Datasets" [ref=e15] [cursor=pointer]:
+            - /url: /search
+          - link "Departments" [ref=e16] [cursor=pointer]:
+            - /url: /departments
+          - link "Showcases" [ref=e17] [cursor=pointer]:
+            - /url: /showcases
+          - link "About" [ref=e18] [cursor=pointer]:
+            - /url: /about
+          - link "Search datasets" [ref=e19] [cursor=pointer]:
+            - /url: /search
+            - img [ref=e20]
+    - main [ref=e22]:
+      - generic [ref=e23]:
+        - img
+        - img
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - paragraph [ref=e26]: City of Kyle, Texas
+            - heading "City of Kyle Open Data" [level=1] [ref=e27]
+            - paragraph [ref=e28]: Explore the City's budgets, financial reports, policies, and public records — open to everyone.
+            - search [ref=e30]:
+              - img
+              - searchbox "Search datasets" [ref=e31]
+              - button "Search" [ref=e32] [cursor=pointer]
+            - generic [ref=e33]:
+              - link "budget" [ref=e34] [cursor=pointer]:
+                - /url: /search?q=budget
+              - link "investment" [ref=e35] [cursor=pointer]:
+                - /url: /search?q=investment
+              - link "water utilities" [ref=e36] [cursor=pointer]:
+                - /url: /search?q=water%20utilities
+              - link "public safety" [ref=e37] [cursor=pointer]:
+                - /url: /search?q=public%20safety
+            - generic [ref=e38]:
+              - generic [ref=e39]:
+                - term [ref=e40]: "62"
+                - definition [ref=e41]: Datasets
+              - generic [ref=e42]:
+                - term [ref=e43]: "6"
+                - definition [ref=e44]: Departments
+              - generic [ref=e45]:
+                - term [ref=e46]: $78.6M
+                - definition [ref=e47]: FY2026 General Fund
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - 'heading "General Fund: Revenues vs. Expenses" [level=2] [ref=e50]'
+              - generic [ref=e51]: FY2023–FY2026
+            - figure [ref=e52]:
+              - 'img "Grouped bar chart: Revenues vs Expenses by FY2023, FY2024, FY2025, FY2026" [ref=e53]':
+                - generic [ref=e55]: $0M
+                - generic [ref=e57]: $25M
+                - generic [ref=e59]: $50M
+                - generic [ref=e61]: $75M
+                - generic [ref=e63]: $100M
+                - generic [ref=e64]:
+                  - generic [ref=e65]:
+                    - 'generic "Revenues FY2023: $58.2M" [ref=e66]'
+                    - generic [ref=e67]: $58.2M
+                  - generic [ref=e68]:
+                    - 'generic "Expenses FY2023: $57M" [ref=e69]'
+                    - generic [ref=e70]: $57M
+                  - generic [ref=e71]: FY2023
+                - generic [ref=e72]:
+                  - generic [ref=e73]:
+                    - 'generic "Revenues FY2024: $62.6M" [ref=e74]'
+                    - generic [ref=e75]: $62.6M
+                  - generic [ref=e76]:
+                    - 'generic "Expenses FY2024: $71M" [ref=e77]'
+                    - generic [ref=e78]: $71M
+                  - generic [ref=e79]: FY2024
+                - generic [ref=e80]:
+                  - generic [ref=e81]:
+                    - 'generic "Revenues FY2025: $73.2M" [ref=e82]'
+                    - generic [ref=e83]: $73.2M
+                  - generic [ref=e84]:
+                    - 'generic "Expenses FY2025: $83.7M" [ref=e85]'
+                    - generic [ref=e86]: $83.7M
+                  - generic [ref=e87]: FY2025
+                - generic [ref=e88]:
+                  - generic [ref=e89]:
+                    - 'generic "Revenues FY2026: $78.6M" [ref=e90]'
+                    - generic [ref=e91]: $78.6M
+                  - generic [ref=e92]:
+                    - 'generic "Expenses FY2026: $78.9M" [ref=e93]'
+                    - generic [ref=e94]: $78.9M
+                  - generic [ref=e95]: FY2026
+                - generic [ref=e96]:
+                  - generic [ref=e99]: Revenues
+                  - generic [ref=e102]: Expenses
+            - 'link "Source: FY2026 - All Funds Master List→" [ref=e103] [cursor=pointer]':
+              - /url: /@finance/fy2026-all-funds-master-list
+      - generic [ref=e105]:
+        - generic [ref=e107]:
+          - heading "Budget at a glance" [level=2] [ref=e110]
+          - paragraph [ref=e111]: Where the General Fund's money comes from — FY2026 adopted budget
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - heading "Revenue by source (FY2026)" [level=3] [ref=e114]
+            - list [ref=e115]:
+              - listitem [ref=e116]:
+                - generic "Sales and Use Tax" [ref=e117]
+                - generic [ref=e121]: $21.9M
+              - listitem [ref=e122]:
+                - generic "Property Taxes" [ref=e123]
+                - generic [ref=e127]: $21.7M
+              - listitem [ref=e128]:
+                - generic "Transfer Revenue" [ref=e129]
+                - generic [ref=e133]: $15.1M
+              - listitem [ref=e134]:
+                - generic "Building Fees" [ref=e135]
+                - generic [ref=e139]: $5.6M
+              - listitem [ref=e140]:
+                - generic "Charges for Services" [ref=e141]
+                - generic [ref=e145]: $5.3M
+              - listitem [ref=e146]:
+                - generic "Franchise Tax" [ref=e147]
+                - generic [ref=e151]: $2.9M
+              - listitem [ref=e152]:
+                - generic "Interest/Investment Income" [ref=e153]
+                - generic [ref=e157]: $2M
+              - listitem [ref=e158]:
+                - generic "Other sources" [ref=e159]
+                - generic [ref=e163]: $3.9M
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - paragraph [ref=e166]: FY2026 revenue
+              - paragraph [ref=e167]: $78.6M
+            - generic [ref=e168]:
+              - paragraph [ref=e169]: FY2026 expenses
+              - paragraph [ref=e170]: $78.9M
+            - generic [ref=e171]:
+              - paragraph [ref=e172]: Largest revenue source
+              - paragraph [ref=e173]: Sales and Use Tax
+              - paragraph [ref=e174]: $21.9M
+      - generic [ref=e175]:
+        - generic [ref=e177]:
+          - heading "Browse by department" [level=2] [ref=e180]
+          - paragraph [ref=e181]: Datasets grouped by the City department that publishes them.
+        - generic [ref=e182]:
+          - link "Finance 52 datasets" [ref=e183] [cursor=pointer]:
+            - /url: /search?dept=finance
+            - img [ref=e185]
+            - generic [ref=e187]:
+              - generic [ref=e188]: Finance
+              - generic [ref=e189]: 52 datasets
+            - img [ref=e190]
+          - link "Police Department 4 datasets" [ref=e192] [cursor=pointer]:
+            - /url: /search?dept=police-department
+            - img [ref=e194]
+            - generic [ref=e196]:
+              - generic [ref=e197]: Police Department
+              - generic [ref=e198]: 4 datasets
+            - img [ref=e199]
+          - link "311/Customer Service 2 datasets" [ref=e201] [cursor=pointer]:
+            - /url: /search?dept=311-customer-service
+            - img [ref=e203]
+            - generic [ref=e205]:
+              - generic [ref=e206]: 311/Customer Service
+              - generic [ref=e207]: 2 datasets
+            - img [ref=e208]
+          - link "Utility Billing 2 datasets" [ref=e210] [cursor=pointer]:
+            - /url: /search?dept=utility-billing
+            - img [ref=e212]
+            - generic [ref=e214]:
+              - generic [ref=e215]: Utility Billing
+              - generic [ref=e216]: 2 datasets
+            - img [ref=e217]
+          - link "Transportation 1 dataset" [ref=e219] [cursor=pointer]:
+            - /url: /search?dept=transportation
+            - img [ref=e221]
+            - generic [ref=e223]:
+              - generic [ref=e224]: Transportation
+              - generic [ref=e225]: 1 dataset
+            - img [ref=e226]
+          - link "Public Works 1 dataset" [ref=e228] [cursor=pointer]:
+            - /url: /search?dept=public-works
+            - img [ref=e230]
+            - generic [ref=e232]:
+              - generic [ref=e233]: Public Works
+              - generic [ref=e234]: 1 dataset
+            - img [ref=e235]
+      - generic [ref=e238]:
+        - generic [ref=e240]:
+          - heading "Featured showcases" [level=2] [ref=e243]
+          - paragraph [ref=e244]: Dashboards, stories, and applications built on the City's open data.
+        - generic [ref=e245]:
+          - link "Budget Book — FY2026 The City's adopted fiscal-year 2026 budget as an interactive digital story." [ref=e246] [cursor=pointer]:
+            - /url: /showcases/budget-book
+            - img [ref=e248]
+            - heading "Budget Book — FY2026" [level=3] [ref=e250]:
+              - text: Budget Book — FY2026
+              - img [ref=e251]
+            - paragraph [ref=e253]: The City's adopted fiscal-year 2026 budget as an interactive digital story.
+          - link "Transparency Spending, revenue, and open data across every City department." [ref=e254] [cursor=pointer]:
+            - /url: /departments
+            - img [ref=e256]
+            - heading "Transparency" [level=3] [ref=e258]:
+              - text: Transparency
+              - img [ref=e259]
+            - paragraph [ref=e261]: Spending, revenue, and open data across every City department.
+          - link "Strategic Plan The City's long-term organizational direction, goals, and progress." [ref=e262] [cursor=pointer]:
+            - /url: /showcases/strategic-plan
+            - img [ref=e264]
+            - heading "Strategic Plan" [level=3] [ref=e266]:
+              - text: Strategic Plan
+              - img [ref=e267]
+            - paragraph [ref=e269]: The City's long-term organizational direction, goals, and progress.
+      - generic [ref=e270]:
+        - heading "Recently updated" [level=2] [ref=e275]
+        - generic [ref=e276]:
+          - link "PDF Finance FY2026 Revenue & Economic Analysis Reports 2 resources View" [ref=e277] [cursor=pointer]:
+            - /url: /@finance/fy2026-revenue-economic-analysis-reports
+            - generic [ref=e278]:
+              - img [ref=e280]
+              - generic [ref=e283]: PDF
+            - paragraph [ref=e284]: Finance
+            - heading "FY2026 Revenue & Economic Analysis Reports" [level=3] [ref=e285]
+            - generic [ref=e286]:
+              - generic [ref=e287]:
+                - img [ref=e288]
+                - text: 2 resources
+              - generic [ref=e290]:
+                - text: View
+                - img [ref=e291]
+          - link "PDF Finance FY2026 Investment Reports 2 resources View" [ref=e293] [cursor=pointer]:
+            - /url: /@finance/fy2026-investment-reports
+            - generic [ref=e294]:
+              - img [ref=e296]
+              - generic [ref=e299]: PDF
+            - paragraph [ref=e300]: Finance
+            - heading "FY2026 Investment Reports" [level=3] [ref=e301]
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - img [ref=e304]
+                - text: 2 resources
+              - generic [ref=e306]:
+                - text: View
+                - img [ref=e307]
+          - link "PDF Finance Financial Status Reports FY2025 This Data set contains the City of Kyle's Financial Status Reports By Quarter for FY2025 4 resources View" [ref=e309] [cursor=pointer]:
+            - /url: /@finance/financial-status-reports
+            - generic [ref=e310]:
+              - img [ref=e312]
+              - generic [ref=e315]: PDF
+            - paragraph [ref=e316]: Finance
+            - heading "Financial Status Reports FY2025" [level=3] [ref=e317]
+            - paragraph [ref=e318]: This Data set contains the City of Kyle's Financial Status Reports By Quarter for FY2025
+            - generic [ref=e319]:
+              - generic [ref=e320]:
+                - img [ref=e321]
+                - text: 4 resources
+              - generic [ref=e323]:
+                - text: View
+                - img [ref=e324]
+          - link "PDF CSV Finance FY2026 - All Funds Master List This Dataset shows all FY2026 City Funds - Revenues and Expenses 2 resources View" [ref=e326] [cursor=pointer]:
+            - /url: /@finance/fy2026-all-funds-master-list
+            - generic [ref=e327]:
+              - img [ref=e329]
+              - generic [ref=e331]:
+                - generic [ref=e332]: PDF
+                - generic [ref=e333]: CSV
+            - paragraph [ref=e334]: Finance
+            - heading "FY2026 - All Funds Master List" [level=3] [ref=e335]
+            - paragraph [ref=e336]: This Dataset shows all FY2026 City Funds - Revenues and Expenses
+            - generic [ref=e337]:
+              - generic [ref=e338]:
+                - img [ref=e339]
+                - text: 2 resources
+              - generic [ref=e341]:
+                - text: View
+                - img [ref=e342]
+          - link "PDF Finance REVENUE & ECONOMIC ANALYSIS REPORT - Q4 1 resource View" [ref=e344] [cursor=pointer]:
+            - /url: /@finance/revenue-economic-analysis-report-q4
+            - generic [ref=e345]:
+              - img [ref=e347]
+              - generic [ref=e350]: PDF
+            - paragraph [ref=e351]: Finance
+            - heading "REVENUE & ECONOMIC ANALYSIS REPORT - Q4" [level=3] [ref=e352]
+            - generic [ref=e353]:
+              - generic [ref=e354]:
+                - img [ref=e355]
+                - text: 1 resource
+              - generic [ref=e357]:
+                - text: View
+                - img [ref=e358]
+          - link "PDF Finance Kyle Qtrly Investment Report-Q4 1 resource View" [ref=e360] [cursor=pointer]:
+            - /url: /@finance/kyle-qtrly-investment-report-q4
+            - generic [ref=e361]:
+              - img [ref=e363]
+              - generic [ref=e366]: PDF
+            - paragraph [ref=e367]: Finance
+            - heading "Kyle Qtrly Investment Report-Q4" [level=3] [ref=e368]
+            - generic [ref=e369]:
+              - generic [ref=e370]:
+                - img [ref=e371]
+                - text: 1 resource
+              - generic [ref=e373]:
+                - text: View
+                - img [ref=e374]
+      - generic [ref=e377]:
+        - img
+        - img
+        - generic [ref=e378]:
+          - heading "Committed to financial transparency" [level=2] [ref=e379]
+          - paragraph [ref=e380]: Every budget book, investment report, and adopted policy is published here as an open, downloadable record. Data is served live from the City's open data catalog.
+          - generic [ref=e381]:
+            - link "Explore the budget" [ref=e382] [cursor=pointer]:
+              - /url: /search?q=budget
+            - link "Open data catalog" [ref=e383] [cursor=pointer]:
+              - /url: https://kyletxprod.ogopendata.com
+    - contentinfo [ref=e384]:
+      - img
+      - generic [ref=e385]:
+        - generic [ref=e386]:
+          - generic [ref=e387]:
+            - img "City of Kyle" [ref=e388]
+            - generic [ref=e389]: Open Data
+          - paragraph [ref=e390]: Open data and financial transparency for the City of Kyle, Texas. Browse budgets, reports, policies, and public records published by City departments.
+        - generic [ref=e391]:
+          - heading "Explore" [level=3] [ref=e392]
+          - list [ref=e393]:
+            - listitem [ref=e394]:
+              - link "Home" [ref=e395] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e396]:
+              - link "All datasets" [ref=e397] [cursor=pointer]:
+                - /url: /search
+        - generic [ref=e398]:
+          - heading "City of Kyle" [level=3] [ref=e399]
+          - list [ref=e400]:
+            - listitem [ref=e401]:
+              - link "cityofkyle.gov" [ref=e402] [cursor=pointer]:
+                - /url: https://www.cityofkyle.gov
+            - listitem [ref=e403]:
+              - link "Data catalog (CKAN)" [ref=e404] [cursor=pointer]:
+                - /url: https://kyletxprod.ogopendata.com
+      - generic [ref=e406]: © 2026 City of Kyle, Texas. Data provided as a public service.
+  - button "Open Next.js Dev Tools" [ref=e412] [cursor=pointer]:
+    - img [ref=e413]
+  - alert [ref=e416]

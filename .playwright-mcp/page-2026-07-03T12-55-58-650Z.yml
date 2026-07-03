@@ -1,0 +1,121 @@
+- generic [ref=f18e4]:
+  - banner [ref=f18e5]:
+    - generic [ref=f18e7]:
+      - generic [ref=f18e8]:
+        - text: A
+        - link "PortalJS" [ref=f18e9] [cursor=pointer]:
+          - /url: https://portaljs.com
+        - text: demo · data from the City of Kyle, Texas open data catalog
+      - link "Data catalog" [ref=f18e11] [cursor=pointer]:
+        - /url: https://kyletxprod.ogopendata.com
+    - navigation [ref=f18e13]:
+      - link "City of Kyle Open Data — home" [ref=f18e14] [cursor=pointer]:
+        - /url: /
+        - img "City of Kyle" [ref=f18e15]
+      - generic [ref=f18e16]:
+        - link "Search datasets" [ref=f18e17] [cursor=pointer]:
+          - /url: /search
+          - img [ref=f18e19]
+        - button "Open menu" [ref=f18e21] [cursor=pointer]:
+          - img [ref=f18e23]
+  - main [ref=f18e25]:
+    - generic [ref=f18e27]:
+      - navigation [ref=f18e28]:
+        - link "Home" [ref=f18e29] [cursor=pointer]:
+          - /url: /
+        - text: /
+        - link "Datasets" [ref=f18e30] [cursor=pointer]:
+          - /url: /search
+        - text: /
+        - link "Finance" [ref=f18e31] [cursor=pointer]:
+          - /url: /search?dept=finance
+      - generic [ref=f18e32]:
+        - generic [ref=f18e33]: Finance
+        - generic [ref=f18e34]: PDF
+        - generic [ref=f18e35]: CSV
+      - heading "FY2026 - All Funds Master List" [level=1] [ref=f18e36]
+      - paragraph [ref=f18e37]: This Dataset shows all FY2026 City Funds - Revenues and Expenses
+    - generic [ref=f18e38]:
+      - generic [ref=f18e39]:
+        - heading "2 Resources" [level=2] [ref=f18e40]
+        - generic [ref=f18e41]:
+          - generic [ref=f18e43]:
+            - generic [ref=f18e44]:
+              - heading "Kyle Master List- All Funds FY 2026.pdf" [level=3] [ref=f18e45]
+              - generic [ref=f18e46]: PDF
+            - link "Download" [ref=f18e47] [cursor=pointer]:
+              - /url: https://kyletxprod.ogopendata.com/dataset/78c8d0ef-50eb-4caf-8214-e5e28b049561/resource/9c42aef5-79d4-4310-9a29-f0b5fdf71355/download/kyle_master-list-all-funds-fy-2026.pdf
+          - generic [ref=f18e50]:
+            - generic [ref=f18e51]:
+              - generic [ref=f18e52]:
+                - heading "Kyle Master List- All Funds FY 2026.csv" [level=3] [ref=f18e53]
+                - generic [ref=f18e54]: CSV
+              - link "Download" [ref=f18e55] [cursor=pointer]:
+                - /url: https://kyletxprod.ogopendata.com/dataset/78c8d0ef-50eb-4caf-8214-e5e28b049561/resource/a29eb753-ec54-486d-a23e-6167c54c4a64/download/master_list-_all_funds_fy_2026.csv
+            - generic [ref=f18e57]:
+              - textbox "Search all columns..." [ref=f18e58]
+              - generic [ref=f18e59]:
+                - table:
+                  - rowgroup:
+                    - row
+                  - rowgroup
+              - generic [ref=f18e60]:
+                - button "Pagination" [disabled] [ref=f18e61]:
+                  - img [ref=f18e63]
+                - button "Pagination" [disabled] [ref=f18e66]:
+                  - img [ref=f18e68]
+                - button "Pagination" [disabled] [ref=f18e70]:
+                  - img [ref=f18e72]
+                - button "Pagination" [disabled] [ref=f18e74]:
+                  - img [ref=f18e76]
+                - generic [ref=f18e79]: Page 1 of 0
+      - complementary [ref=f18e80]:
+        - generic [ref=f18e81]:
+          - heading "Details" [level=2] [ref=f18e82]
+          - generic [ref=f18e83]:
+            - generic [ref=f18e84]:
+              - term [ref=f18e85]: Department
+              - definition [ref=f18e86]: Finance
+            - generic [ref=f18e87]:
+              - term [ref=f18e88]: Formats
+              - definition [ref=f18e89]:
+                - generic [ref=f18e90]: PDF
+                - generic [ref=f18e91]: CSV
+            - generic [ref=f18e92]:
+              - term [ref=f18e93]: Resources
+              - definition [ref=f18e94]: "2"
+            - generic [ref=f18e95]:
+              - term [ref=f18e96]: Last updated
+              - definition [ref=f18e97]: February 18, 2026
+          - generic [ref=f18e98]:
+            - link "View on CKAN →" [ref=f18e99] [cursor=pointer]:
+              - /url: https://kyletxprod.ogopendata.com/dataset/fy2026-all-funds-master-list
+            - link "API (JSON) →" [ref=f18e100] [cursor=pointer]:
+              - /url: https://kyletxprod.ogopendata.com/api/3/action/package_show?id=fy2026-all-funds-master-list
+  - contentinfo [ref=f18e101]:
+    - img
+    - generic [ref=f18e102]:
+      - generic [ref=f18e103]:
+        - generic [ref=f18e104]:
+          - img "City of Kyle" [ref=f18e105]
+          - generic [ref=f18e106]: Open Data
+        - paragraph [ref=f18e107]: Open data and financial transparency for the City of Kyle, Texas. Browse budgets, reports, policies, and public records published by City departments.
+      - generic [ref=f18e108]:
+        - heading "Explore" [level=3] [ref=f18e109]
+        - list [ref=f18e110]:
+          - listitem [ref=f18e111]:
+            - link "Home" [ref=f18e112] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f18e113]:
+            - link "All datasets" [ref=f18e114] [cursor=pointer]:
+              - /url: /search
+      - generic [ref=f18e115]:
+        - heading "City of Kyle" [level=3] [ref=f18e116]
+        - list [ref=f18e117]:
+          - listitem [ref=f18e118]:
+            - link "cityofkyle.gov" [ref=f18e119] [cursor=pointer]:
+              - /url: https://www.cityofkyle.gov
+          - listitem [ref=f18e120]:
+            - link "Data catalog (CKAN)" [ref=f18e121] [cursor=pointer]:
+              - /url: https://kyletxprod.ogopendata.com
+    - generic [ref=f18e123]: © 2026 City of Kyle, Texas. Data provided as a public service.

@@ -15,9 +15,9 @@ export default function ComparisonTable({
       <table className="w-full min-w-[640px] border-collapse text-sm">
         <thead>
           <tr className="border-b border-gray-200 bg-gray-50">
-            <th className="px-4 py-2.5 text-left font-semibold text-gray-700">&nbsp;</th>
+            <th className="px-4 py-2.5 text-left font-semibold whitespace-nowrap text-gray-700">&nbsp;</th>
             {columns.map((c) => (
-              <th key={c} className="px-4 py-2.5 text-right font-semibold text-gray-700">
+              <th key={c} className="px-4 py-2.5 text-right font-semibold whitespace-nowrap text-gray-700">
                 {c}
               </th>
             ))}

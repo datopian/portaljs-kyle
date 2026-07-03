@@ -198,7 +198,7 @@ export default function Home({ total, departments, recent, budget }: Props) {
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
                 href="/search?q=budget"
-                className="rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-brand transition-colors hover:bg-white/90"
+                className="rounded-md bg-white px-5 py-2.5 text-base font-semibold text-brand transition-colors hover:bg-white/90 sm:text-sm"
               >
                 Explore the budget
               </Link>
@@ -206,7 +206,7 @@ export default function Home({ total, departments, recent, budget }: Props) {
                 href="https://kyletxprod.ogopendata.com"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-md border border-white/40 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                className="rounded-md border border-white/40 px-5 py-2.5 text-base font-semibold text-white transition-colors hover:bg-white/10 sm:text-sm"
               >
                 Open data catalog
               </a>
@@ -235,9 +235,9 @@ function StatCard({
     tone === 'green' ? 'text-brand-green' : tone === 'red' ? 'text-brand-red' : 'text-brand'
   return (
     <div className={`rounded-2xl border border-gray-200 bg-white p-5 ${className}`}>
-      <p className="text-xs font-semibold uppercase tracking-wider text-gray-400">{label}</p>
-      <p className={`mt-1 text-2xl font-bold ${accent}`}>{value}</p>
-      {sub && <p className="mt-0.5 text-sm text-gray-500">{sub}</p>}
+      <p className="text-sm font-semibold uppercase tracking-wider text-gray-400 sm:text-xs">{label}</p>
+      <p className={`mt-1 text-3xl font-bold sm:text-2xl ${accent}`}>{value}</p>
+      {sub && <p className="mt-0.5 text-base text-gray-500 sm:text-sm">{sub}</p>}
     </div>
   )
 }

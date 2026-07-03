@@ -44,7 +44,7 @@ function renderBlock(block: Block, i: number) {
       return (
         <div
           key={i}
-          className="prose prose-sm max-w-none text-gray-600"
+          className="prose prose-gray max-w-none"
           dangerouslySetInnerHTML={{ __html: block.html }}
         />
       )

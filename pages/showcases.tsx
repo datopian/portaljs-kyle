@@ -18,7 +18,7 @@ export default function Showcases() {
             <span className="text-gray-700">Showcases</span>
           </nav>
           <h1 className="text-3xl font-bold text-gray-900">Showcases</h1>
-          <p className="mt-1 max-w-2xl text-sm text-gray-500">
+          <p className="mt-1 max-w-2xl text-base text-gray-500 sm:text-sm">
             Dashboards, applications, and websites that provide further insight, ideas, and
             inspiration around the City of Kyle&rsquo;s open data.
           </p>

@@ -120,7 +120,7 @@ export default function DatasetPage({ dataset }: { dataset: DatasetView }) {
 
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 lg:grid-cols-[1fr_18rem]">
         {/* Main: resources */}
-        <div>
+        <div className="min-w-0">
           <h2 className="mb-4 text-xl font-semibold text-gray-900">
             {dataset.resources.length} {dataset.resources.length === 1 ? 'Resource' : 'Resources'}
           </h2>
@@ -131,14 +131,14 @@ export default function DatasetPage({ dataset }: { dataset: DatasetView }) {
               {dataset.resources.map((r) => (
                 <section key={r.id} className="overflow-hidden rounded-xl border border-gray-200 bg-white">
                   <div className="flex items-center justify-between gap-3 border-b border-gray-100 px-5 py-3">
-                    <div className="flex items-center gap-2">
-                      <h3 className="font-medium text-gray-800">{r.name}</h3>
-                      {r.format && <Badge tone={formatTone(r.format)}>{r.format.toUpperCase()}</Badge>}
-                    </div>
+                  <div className="flex min-w-0 items-center gap-2">
+                    <h3 className="min-w-0 break-words font-medium text-gray-800">{r.name}</h3>
+                    {r.format && <Badge tone={formatTone(r.format)}>{r.format.toUpperCase()}</Badge>}
+                  </div>
                     {r.url && (
                       <a
                         href={r.url}
-                        className="shrink-0 rounded-md bg-brand px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-brand-dark"
+                        className="shrink-0 rounded-md bg-brand px-3.5 py-2 text-sm font-medium text-white transition-colors hover:bg-brand-dark sm:px-3 sm:py-1.5"
                       >
                         Download
                       </a>

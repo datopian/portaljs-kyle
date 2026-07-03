@@ -1,0 +1,91 @@
+- generic [ref=f12e4]:
+  - banner [ref=f12e5]:
+    - generic [ref=f12e7]:
+      - generic [ref=f12e8]:
+        - text: A
+        - link "PortalJS" [ref=f12e9] [cursor=pointer]:
+          - /url: https://portaljs.com
+        - text: demo · data from the City of Kyle, Texas open data catalog
+      - link "Data catalog" [ref=f12e11] [cursor=pointer]:
+        - /url: https://kyletxprod.ogopendata.com
+    - navigation [ref=f12e13]:
+      - link "City of Kyle Open Data — home" [ref=f12e14] [cursor=pointer]:
+        - /url: /
+        - img "City of Kyle" [ref=f12e15]
+      - generic [ref=f12e16]:
+        - link "Search datasets" [ref=f12e17] [cursor=pointer]:
+          - /url: /search
+          - img [ref=f12e19]
+        - button "Open menu" [ref=f12e21] [cursor=pointer]:
+          - img [ref=f12e23]
+  - main [ref=f12e25]:
+    - generic [ref=f12e27]:
+      - navigation [ref=f12e28]:
+        - link "Home" [ref=f12e29] [cursor=pointer]:
+          - /url: /
+        - text: /Showcases
+      - heading "Showcases" [level=1] [ref=f12e30]
+      - paragraph [ref=f12e31]: Dashboards, applications, and websites that provide further insight, ideas, and inspiration around the City of Kyle’s open data.
+    - generic [ref=f12e33]:
+      - link "Budget Book — FY2026 The City's adopted fiscal-year 2026 budget as an interactive digital story." [ref=f12e34] [cursor=pointer]:
+        - /url: /showcases/budget-book
+        - img [ref=f12e36]
+        - heading "Budget Book — FY2026" [level=3] [ref=f12e38]:
+          - text: Budget Book — FY2026
+          - img [ref=f12e39]
+        - paragraph [ref=f12e41]: The City's adopted fiscal-year 2026 budget as an interactive digital story.
+      - link "Transparency Spending, revenue, and open data across every City department." [ref=f12e42] [cursor=pointer]:
+        - /url: /departments
+        - img [ref=f12e44]
+        - heading "Transparency" [level=3] [ref=f12e46]:
+          - text: Transparency
+          - img [ref=f12e47]
+        - paragraph [ref=f12e49]: Spending, revenue, and open data across every City department.
+      - link "Strategic Plan The City's long-term organizational direction, goals, and progress." [ref=f12e50] [cursor=pointer]:
+        - /url: /showcases/strategic-plan
+        - img [ref=f12e52]
+        - heading "Strategic Plan" [level=3] [ref=f12e54]:
+          - text: Strategic Plan
+          - img [ref=f12e55]
+        - paragraph [ref=f12e57]: The City's long-term organizational direction, goals, and progress.
+      - link "Kyle's My City GIS Hub Interactive maps and spatial data for the City of Kyle." [ref=f12e58] [cursor=pointer]:
+        - /url: https://city-of-kyle-maps-giskyle.hub.arcgis.com
+        - img [ref=f12e60]
+        - heading "Kyle's My City GIS Hub" [level=3] [ref=f12e62]:
+          - text: Kyle's My City GIS Hub
+          - img [ref=f12e63]
+        - paragraph [ref=f12e65]: Interactive maps and spatial data for the City of Kyle.
+      - link "City of Kyle Website The main municipal web portal for residents and visitors." [ref=f12e66] [cursor=pointer]:
+        - /url: https://www.cityofkyle.gov
+        - img [ref=f12e68]
+        - heading "City of Kyle Website" [level=3] [ref=f12e70]:
+          - text: City of Kyle Website
+          - img [ref=f12e71]
+        - paragraph [ref=f12e73]: The main municipal web portal for residents and visitors.
+  - contentinfo [ref=f12e74]:
+    - img
+    - generic [ref=f12e75]:
+      - generic [ref=f12e76]:
+        - generic [ref=f12e77]:
+          - img "City of Kyle" [ref=f12e78]
+          - generic [ref=f12e79]: Open Data
+        - paragraph [ref=f12e80]: Open data and financial transparency for the City of Kyle, Texas. Browse budgets, reports, policies, and public records published by City departments.
+      - generic [ref=f12e81]:
+        - heading "Explore" [level=3] [ref=f12e82]
+        - list [ref=f12e83]:
+          - listitem [ref=f12e84]:
+            - link "Home" [ref=f12e85] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f12e86]:
+            - link "All datasets" [ref=f12e87] [cursor=pointer]:
+              - /url: /search
+      - generic [ref=f12e88]:
+        - heading "City of Kyle" [level=3] [ref=f12e89]
+        - list [ref=f12e90]:
+          - listitem [ref=f12e91]:
+            - link "cityofkyle.gov" [ref=f12e92] [cursor=pointer]:
+              - /url: https://www.cityofkyle.gov
+          - listitem [ref=f12e93]:
+            - link "Data catalog (CKAN)" [ref=f12e94] [cursor=pointer]:
+              - /url: https://kyletxprod.ogopendata.com
+    - generic [ref=f12e96]: © 2026 City of Kyle, Texas. Data provided as a public service.

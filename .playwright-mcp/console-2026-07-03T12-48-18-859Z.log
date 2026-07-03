@@ -1,0 +1,102 @@
+[     141ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_0zk-zb1._.js:1226
+[     166ms] [LOG] [Fast Refresh] done in 126ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_0zk-zb1._.js:1226
+[    2322ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[    2329ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_0zk-zb1._.js:1226
+[    2376ms] [ERROR] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Layout>
+      <div className="flex min-h...">
+        <Navbar>
+        <main className="flex-1">
+          <ShowcaseStory story={{...}}>
+            <StoryLayout story={{...}}>
+              <Head>
+              <section>
+              <nav>
+              <div className="mx-auto ma...">
+                <StorySection>
+                <StorySection section={{id:"genera...", ...}}>
+                  <section id="general-fund" className="scroll-mt-24">
+                    <SectionHeading>
+                    <div className="space-y-6">
+                      <KpiTiles>
+                      <ChartCard>
+                      <ChartCard title="FY2026 Rev..." source={{name:"FY20...", ...}}>
+                        <div className="rounded-xl...">
+                          <h3>
+                          <Donut slices={[...]} centerLabel="Revenues" unitPrefix="$">
+                            <figure className="flex flex-...">
+                              <svg viewBox="0 0 320 320" className="h-auto w-f..." role="img" aria-label="Donut char...">
+                                <path
++                                 d="M 160 30 A 130 130 0 0 1 287.8168877256931 183.72431689464563 L 232.7573053207791..."
+-                                 d="M 160 30 A 130 130 0 0 1 287.81688772569305 183.72431689464563 L 232.757305320779..."
+                                  fill="#173a64"
+                                  stroke="#fff"
+                                  strokeWidth={1.5}
+                                >
+                                <path
++                                 d="M 287.8168877256931 183.72431689464563 A 130 130 0 0 1 116.04696745555384 282.344..."
+-                                 d="M 287.81688772569305 183.72431689464563 A 130 130 0 0 1 116.04696745555384 282.34..."
+                                  fill="#c01f41"
+                                  stroke="#fff"
+                                  strokeWidth={1.5}
+                                >
+                                <path>
+                                <path>
+                                <path>
+                                <path
++                                 d="M 75.14197387650167 61.515912948214435 A 130 130 0 0 1 100.2639825331168 44.53741..."
+-                                 d="M 75.14197387650167 61.515912948214435 A 130 130 0 0 1 100.2639825331168 44.53741..."
+                                  fill="#7b5ea7"
+                                  stroke="#fff"
+                                  strokeWidth={1.5}
+                                >
+                                <path
++                                 d="M 100.2639825331168 44.53741637570971 A 130 130 0 0 1 119.40665377954693 36.50028..."
+-                                 d="M 100.2639825331168 44.537416375709725 A 130 130 0 0 1 119.40665377954693 36.5002..."
+                                  fill="#2aa198"
+                                  stroke="#fff"
+                                  strokeWidth={1.5}
+                                >
+                                ...
+                                ...
+                              ...
+                          ...
+                      <ChartCard title="FY2026 Exp..." source={{name:"FY20...", ...}}>
+                        <div className="rounded-xl...">
+                          <h3>
+                          <Donut slices={[...]} centerLabel="Expenditures" unitPrefix="$">
+                            <figure className="flex flex-...">
+                              <svg viewBox="0 0 320 320" className="h-auto w-f..." role="img" aria-label="Donut char...">
+                                <path
++                                 d="M 160 30 A 130 130 0 0 1 244.48713010935643 61.197546356961965 L 208.092674062249..."
+-                                 d="M 160 30 A 130 130 0 0 1 244.48713010935643 61.19754635696198 L 208.0926740622490..."
+                                  fill="#173a64"
+                                  stroke="#fff"
+                                  strokeWidth={1.5}
+                                >
+                                <path
++                                 d="M 244.48713010935643 61.197546356961965 A 130 130 0 0 1 279.4635999418361 108.731..."
+-                                 d="M 244.48713010935643 61.19754635696198 A 130 130 0 0 1 279.4635999418361 108.7316..."
+                                  fill="#c01f41"
+                                  stroke="#fff"
+                                  strokeWidth={1.5}
+                                >
+                                ...
+                                ...
+                              ...
+                          ...
+                      ...
+        ...
+ @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_0zk-zb1._.js:1945

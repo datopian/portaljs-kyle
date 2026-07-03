@@ -59,18 +59,18 @@ export default function Hero({
               <Link
                 key={q}
                 href={`/search?q=${encodeURIComponent(q)}`}
-                className="rounded-full border border-white/25 px-3 py-1 text-sm text-white/85 transition-colors hover:border-white hover:bg-white/10"
+                className="rounded-full border border-white/25 px-3.5 py-1.5 text-sm text-white/85 transition-colors hover:border-white hover:bg-white/10 sm:px-3 sm:py-1"
               >
                 {q}
               </Link>
             ))}
           </div>
 
-          <dl className="mt-9 flex flex-wrap gap-x-10 gap-y-4">
+          <dl className="mt-9 flex flex-wrap gap-x-8 gap-y-4 sm:gap-x-10">
             {stats.map((s) => (
               <div key={s.label}>
-                <dt className="text-2xl font-bold">{s.value}</dt>
-                <dd className="text-sm text-white/70">{s.label}</dd>
+                <dt className="text-3xl font-bold sm:text-2xl">{s.value}</dt>
+                <dd className="text-base text-white/70 sm:text-sm">{s.label}</dd>
               </div>
             ))}
           </dl>

@@ -41,7 +41,7 @@ export default function Departments({ departments, total }: Props) {
             <span className="text-gray-700">Transparency</span>
           </nav>
           <h1 className="text-3xl font-bold text-gray-900">Transparency</h1>
-          <p className="mt-1 max-w-2xl text-sm text-gray-500">
+          <p className="mt-1 max-w-2xl text-base text-gray-500 sm:text-sm">
             Spending, revenue, and open data across every City department —
             {' '}{total} datasets published by {departments.length} departments.
           </p>
@@ -49,19 +49,19 @@ export default function Departments({ departments, total }: Props) {
           <div className="mt-4 flex flex-wrap gap-2 text-sm">
             <Link
               href="/showcases/budget-book"
-              className="rounded-full border border-gray-200 px-3 py-1 font-medium text-brand hover:border-brand hover:bg-brand/5"
+              className="rounded-full border border-gray-200 px-3.5 py-1.5 font-medium text-brand hover:border-brand hover:bg-brand/5 sm:px-3 sm:py-1"
             >
               Budget Book →
             </Link>
             <Link
               href="/showcases/strategic-plan"
-              className="rounded-full border border-gray-200 px-3 py-1 font-medium text-brand hover:border-brand hover:bg-brand/5"
+              className="rounded-full border border-gray-200 px-3.5 py-1.5 font-medium text-brand hover:border-brand hover:bg-brand/5 sm:px-3 sm:py-1"
             >
               Strategic Plan →
             </Link>
             <Link
               href="/search"
-              className="rounded-full border border-gray-200 px-3 py-1 font-medium text-brand hover:border-brand hover:bg-brand/5"
+              className="rounded-full border border-gray-200 px-3.5 py-1.5 font-medium text-brand hover:border-brand hover:bg-brand/5 sm:px-3 sm:py-1"
             >
               Open Data →
             </Link>

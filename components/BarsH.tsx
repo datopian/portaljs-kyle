@@ -19,11 +19,11 @@ export default function BarsH({
   return (
     <ul className="space-y-3">
       {bars.map((b, i) => (
-        <li key={b.label} className="grid grid-cols-[10rem_1fr] items-center gap-3 sm:grid-cols-[13rem_1fr]">
-          <span className="truncate text-right text-sm text-gray-600" title={b.label}>
+        <li key={b.label} className="grid grid-cols-[8rem_1fr] items-center gap-3 sm:grid-cols-[13rem_1fr]">
+          <span className="min-w-0 truncate text-right text-sm text-gray-600" title={b.label}>
             {b.label}
           </span>
-          <div className="flex items-center gap-2">
+          <div className="flex min-w-0 items-center gap-2">
             <div className="h-6 flex-1 overflow-hidden rounded bg-gray-100">
               <div
                 className={`h-full rounded ${i === 0 ? 'bg-brand-green' : 'bg-brand'}`}
